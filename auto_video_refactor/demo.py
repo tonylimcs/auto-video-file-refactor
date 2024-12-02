@@ -1,25 +1,20 @@
-from controller.refactor import refactor, exec_refactoring
-
-import common
-import os
+from auto_video_refactor.controller.refactor import refactor, preview, exec_refactoring
+from auto_video_refactor.controller.cleaner import clean
 
 
 def main():
-    src_dir = r"C:\Users\Lim Cheng Siang\Downloads\Attack on Titan (2013)"
+    src_dir = input("Source directory: ")
+    title = input("Title: ")
 
-    title = "Attack on Titan (2013)"
+    rf_struct = refactor(src_dir, title)
+    print(preview(rf_struct))
 
-    _dict = refactor(src_dir, title)
+    if rf_struct:
+        confirm = input("\nConfirm? (y/n) ")
 
-    if _dict:
-        _input = input("\nConfirm? (y/n) ")
-        _input = 'y'
-
-        if _input.lower() == "y":
-            exec_refactoring(_dict)
-
-            if src_dir != str(os.path.join(os.path.dirname(src_dir), title)):
-                common.remove_dir(src_dir)
+        if confirm.lower() == "y":
+            exec_refactoring(rf_struct)
+            clean(rf_struct)
 
 
 if __name__ == "__main__":
