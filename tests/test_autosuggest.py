@@ -1,4 +1,4 @@
-from auto_video_refactor.controller.autosuggest import similarity
+from auto_video_refactor.controller.autosuggest import similarity, autosuggest_movie_title
 
 import pytest
 
@@ -19,3 +19,11 @@ def test_similarity_positive(filenames, expected):
 ])
 def test_similarity_fail(filenames, expected):
     assert similarity(filenames)[0] == expected
+
+
+def test_autosuggest_video_title(tmp_path):
+    d = tmp_path / "This.is.a.Movie.(2024).blah.blah.blah"
+    d.mkdir()
+    p = d / "This.is.a.Movie.(2024).blah.blah.blah.mkv"
+    p.write_text("")
+    assert autosuggest_movie_title(str(d)) == "This Is A Movie (2024)"
