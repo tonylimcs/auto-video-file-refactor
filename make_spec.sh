@@ -1,1 +1,0 @@
-pyinstaller "Auto Video Refactor.spec"
