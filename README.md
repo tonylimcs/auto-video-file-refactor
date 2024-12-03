@@ -35,7 +35,7 @@ Application for refactoring file system structure and filename of video (and sub
 
 ## Drag-and-Drop Folder
 > User can drag the source folder(s) and drop directly onto the app window for refactoring.
-
+ 
 ## Multi-select Folders
 > User can select multiple source folders if the folders all contain video files of the same TV series.
 > 
@@ -74,18 +74,23 @@ The only file required to run the app.
 # Packaging (.exe)
 
 ## Method 1
-> ### First, create the .spec file:
+> First, create the .spec file: \
 > <code>pyi-makespec -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
-> ### Then,
+> 
+> Then, \
 > <code>pyinstaller "Auto Video Refactor.spec"</code>
-> ### Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file as the command above.
-> ### Finally, the *dist* folder is created where the .exe file can be found within.
+> 
+> Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file as the command above.
+> 
+> Finally, the *dist* folder is created where the .exe file can be found within.
 
 ## Method 2
-> ### Run:
+> Run: \
 > <code>pyinstaller -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
-> ### The .spec file and the *dist* folder are then created; the .exe file can be found in the aforementioned folder.
-> ### Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file like so:
+> 
+> The .spec file and the *dist* folder are then created; the .exe file can be found in the aforementioned folder.
+> 
+> Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file like so: \
 > <code>pyinstaller "Auto Video Refactor.spec"</code>
 
 #### Reference: [PyInstaller documentations](https://pyinstaller.org/en/stable/usage.html)
@@ -104,7 +109,7 @@ The only file required to run the app.
 
 
 # Contributor
-> ### Lim Cheng Siang
+### Lim Cheng Siang
 > - cslim.careers@gmail.com
 > - [GitHub](https://github.com/tonylimcs)
 > - [LinkedIn](https://www.linkedin.com/in/tony-lim-cs/)
