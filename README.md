@@ -16,8 +16,8 @@ Application for refactoring file system structure and filename of video (and sub
 ### Developer Reference
 - [Dependencies](#dependencies)
 - [Packaging (.exe)](#packaging-exe)
-  - [Method 1](#method-1)
-  - [Method 2](#method-2)
+  - [Method #1](#method-1)
+  - [Method #2](#method-2)
 - [Maintainability](#maintainability)
 - [Future Work](#future-work)
 
@@ -73,7 +73,7 @@ The only file required to run the app.
 
 # Packaging (.exe)
 
-## Method 1
+## Method #1
 > First, create the .spec file: \
 > <code>pyi-makespec -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
 > 
@@ -84,7 +84,7 @@ The only file required to run the app.
 > 
 > Finally, the *dist* folder is created where the .exe file can be found within.
 
-## Method 2
+## Method #2
 > Run: \
 > <code>pyinstaller -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
 > 
