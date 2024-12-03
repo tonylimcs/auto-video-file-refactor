@@ -33,19 +33,19 @@ Application for refactoring file system structure and filename of video (and sub
 
 # Features
 
-## Drag-and-Drop Folder
+> ## Drag-and-Drop Folder
 > User can drag the source folder(s) and drop directly onto the app window for refactoring.
- 
-## Multi-select Folders
+> 
+> ## Multi-select Folders
 > User can select multiple source folders if the folders all contain video files of the same TV series.
 > 
-> >For example, a TV series have 5 seasons, and they are separated into multiple folders, say, 1 folder for each season.
+> > For example, a TV series have 5 seasons, and they are separated into multiple folders, say, 1 folder for each season.
 > They can be selected, dragged and dropped onto the app window simultaneously for refactoring. The app will then refactor the file system structure accordingly.
-
-## Autosuggest Video Title
+>
+> ## Autosuggest Video Title
 > The app will try to predict (using simple algorithm) the title of the video by scanning across the source filenames. This feature helps to save the hassle of typing the entire title; moreover, the user only need to make little changes even when the prediction is imperfect.
-
-## Directory Cleanup
+>
+> ## Directory Cleanup
 > Source directories will be removed automatically after refactoring, _if they are empty_.
 
 
