@@ -1,4 +1,4 @@
-# Auto Video Refactor
+# Auto Video File Refactor
 Application for refactoring file system structure and filename of video (and subtitle) file.
 
 
@@ -68,7 +68,7 @@ The only file required to run the app.
 
 
 # Maintainability
-* All icons should be stored in [icons](auto_video_refactor/view/icons) folder.
+* All icons should be stored in [icons](auto_video_file_refactor/view/icons) folder.
 
 
 # Packaging (.exe)
@@ -97,7 +97,7 @@ The only file required to run the app.
 
 
 # Future Work
-- Implement [validation function](auto_video_refactor/controller/validator.py) that will ensure that the output is correct before proceeding to make any changes; trigger errors and warnings to the user when necessary.
+- Implement [validation function](auto_video_file_refactor/controller/validator.py) that will ensure that the output is correct before proceeding to make any changes; trigger errors and warnings to the user when necessary.
 
 
 ---

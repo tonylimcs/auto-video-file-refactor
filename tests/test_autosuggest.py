@@ -1,4 +1,4 @@
-from auto_video_refactor.controller.autosuggest import similarity, autosuggest_movie_title
+from auto_video_file_refactor.controller.autosuggest import similarity, autosuggest_movie_title
 
 import pytest
 
