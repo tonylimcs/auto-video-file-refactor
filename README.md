@@ -68,7 +68,7 @@ The only file required to run the app.
 
 
 # Maintainability
-* All icons should be stored in [icons](auto_video_file_refactor/view/icons) folder.
+* All icons should be stored in _[icons](auto_video_file_refactor/view/icons)_ folder.
 
 
 # Packaging (.exe)
