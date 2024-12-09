@@ -9,12 +9,12 @@ from PySide6.QtWidgets import (
 from auto_video_file_refactor.view.widgets.push_button_widget import PushButtonWidget
 from auto_video_file_refactor.controller.autosuggest import autosuggest_video_title
 from auto_video_file_refactor.view.widgets.line_edit_widget import LineEditWidget
+from auto_video_file_refactor.model.file_system_tree import FileSystemTree
 from auto_video_file_refactor.view.widgets.tree_widget import TreeWidget
 from auto_video_file_refactor.common import ICONS_DIR
 from PySide6.QtCore import QSize, Qt
 from PySide6.QtGui import QIcon
 
-import auto_video_file_refactor.model.file_system_tree as fstree
 import sys
 import os
 
@@ -89,7 +89,7 @@ class MainWindow(QMainWindow):
 
             paths = [str(url.toLocalFile()) for url in event.mimeData().urls()]
 
-            tree = fstree.generate(paths)
+            tree: list = FileSystemTree(paths)
             self.left_tree.populate(tree)
 
             self.line_edit_video_title.clear()
