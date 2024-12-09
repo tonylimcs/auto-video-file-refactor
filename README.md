@@ -74,24 +74,32 @@ The only file required to run the app.
 # Packaging (.exe)
 
 ## Method #1
-> First, create the .spec file: \
-> <code>pyi-makespec -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
+> First, create the .spec file:
+> ```commandline 
+> pyi-makespec -n 'Auto Video File Refactor' --add-data 'auto_video_file_refactor/view/icons;auto_video_file_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_file_refactor.py
+> ```
 > 
-> Then, \
-> <code>pyinstaller "Auto Video Refactor.spec"</code>
+> Then,
+> ```commandline
+> pyinstaller "Auto Video File Refactor.spec"
+> ```
 > 
 > Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file as the command above.
 > 
 > Finally, the *dist* folder is created where the .exe file can be found within.
 
 ## Method #2
-> Run: \
-> <code>pyinstaller -n 'Auto Video Refactor' --add-data 'auto_video_refactor/view/icons;auto_video_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_refactor.py</code>
+> Run:
+> ```commandline 
+> pyinstaller -n 'Auto Video File Refactor' --add-data 'auto_video_file_refactor/view/icons;auto_video_file_refactor/view/icons' --add-data 'film_roll_icon.ico;.' --icon='film_roll_icon.ico' --windowed --onefile auto_video_file_refactor.py
+> ```
 > 
 > The .spec file and the *dist* folder are then created; the .exe file can be found in the aforementioned folder.
 > 
-> Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file like so: \
-> <code>pyinstaller "Auto Video Refactor.spec"</code>
+> Subsequently, make edits directly on the .spec file and run *pyinstaller* on this file like so:
+> ```commandline 
+> pyinstaller "Auto Video File Refactor.spec"
+> ```
 
 #### Reference: [PyInstaller documentations](https://pyinstaller.org/en/stable/usage.html)
 
