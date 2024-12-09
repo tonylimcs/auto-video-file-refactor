@@ -54,7 +54,7 @@ This app is tested and run on **_Windows 11_**.
 
 
 # Usage
-*Auto Video Refactor* executable (.exe) file can be found in [dist](dist) folder. 
+*Auto Video Refactor* executable (.exe) file can be found in _[dist](dist)_ folder. 
 The only file required to run the app.
 
 
